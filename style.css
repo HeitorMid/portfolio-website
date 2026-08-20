@@ -6,8 +6,8 @@
     --border: #ddddE7;
     --dark: #0d0d12;
     --blue: #2dd5ef;
-    --pink: #37fb7c;
-    --gradient: linear-gradient(90deg, var(--blue), var(--pink));
+    --green: #37fb7c;
+    --gradient: linear-gradient(90deg, var(--blue), var(--green));
     --shadow: 0 20px 60px rgba(15, 15, 30, 0.10);
     --radius: 24px;
 }
