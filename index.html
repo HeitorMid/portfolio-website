@@ -1,192 +1,301 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio website</title>
+    <meta name="description" content="Portfólio de Pedro Heitor, estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento web, front-end e suporte de TI.">
+    <title>Pedro Heitor | Portfólio de TI</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
 </head>
-
 <body>
     <header class="header">
-        <a href="#" class="logo"><span>Pedro Heitor</span></a>
+        <a href="#about" class="logo" aria-label="Ir para o início">Pedro <span>Heitor</span></a>
 
-        <ul class="nav-links">
-            <li>
-                <a href="#about">Sobre</a>
-            </li>
+        <nav aria-label="Navegação principal">
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Competências</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#education">Formação</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
 
-             <li>
-                <a href="#experience">Experiencia</a>
-            </li>
+        <button class="menu-button" id="menu-icon" aria-label="Abrir menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-             <li>
-                <a href="#projects">Projetos</a>
-            </li>
-
-             <li>
-                <a href="#contact">Contatos</a>
-            </li>
-        </ul>
-
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-        <a href="https://github.com/HeitorMid" target="_blank" class="visit-btn">
-    Visitar GitHub
-</a>
+        <a href="https://github.com/HeitorMid" target="_blank" rel="noopener noreferrer" class="visit-btn">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
     </header>
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="4f6320dc-8a06-4cdd-acfe-5014759a0e7b.png" alt="">
-            <div class="info-box">
+    <main>
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="profile-wrap">
+                    <img src="4f6320dc-8a06-4cdd-acfe-5014759a0e7b.png" alt="Foto de Pedro Heitor" class="profile-img">
+                </div>
 
-                <div class="text">
-                    <h3>Oi, prazer meu nome é </h3>
+                <div class="info-box">
+                    <p class="eyebrow">Olá, eu sou</p>
                     <h1>Pedro Heitor</h1>
-                    <span>Frontend Developer</span>
-                </div>
+                    <h2>Estudante de ADS <span>• Desenvolvimento Web • Front-end • Suporte de TI</span></h2>
+                    <p class="about-text">
+                        Estudante do 4º semestre de Análise e Desenvolvimento de Sistemas, com formação técnica na área e experiência prática em desenvolvimento, manutenção e atualização de aplicações web. Busco oportunidades de estágio em Tecnologia da Informação para aplicar meus conhecimentos, evoluir tecnicamente e contribuir com projetos reais.
+                    </p>
 
-                <div class="btn-group">
-                    <a href="#" download class="btn">Baixar Currículo</a>
-                     <a href="https://wa.me/559191752652?text=Olá%2C%20vi%20seu%20portfólio%20e%20gostaria%20de%20entrar%20em%20contato." target="_blank" class="btn">Falar no WhatsApp</a>
-                </div>
+                    <div class="btn-group">
+                        <a href="Curriculo_Pedro_Heitor_TI.pdf" download class="btn btn-primary">
+                            <i class="fa-solid fa-download"></i> Baixar Currículo
+                        </a>
+                        <a href="https://wa.me/5591991752652?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20entrar%20em%20contato." target="_blank" rel="noopener noreferrer" class="btn">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
 
-                <div class="socials">
-                    <a href="https://github.com/HeitorMid" target="_blank">
-    <i class="fa-brands fa-github"></i>
-</a>
-                    <a href="https://www.linkedin.com/in/pedro-heitor-da-fonseca-matos-805741386/" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-</a>
+                    <div class="socials" aria-label="Redes profissionais">
+                        <a href="https://github.com/HeitorMid" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Pedro Heitor"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pedro-heitor-da-fonseca-matos-805741386/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Pedro Heitor"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:pedroheitor.mid@gmail.com" aria-label="Enviar e-mail para Pedro Heitor"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
                 </div>
-
             </div>
-        </div>
+        </section>
 
-    </section>
+        <section id="skills" class="skills section-light">
+            <div class="section-heading">
+                <p class="eyebrow">Tecnologias e ferramentas</p>
+                <h2 class="section-title">Competências</h2>
+                <p class="section-subtitle">Conhecimentos que utilizo em projetos, estudos e atividades profissionais.</p>
+            </div>
 
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experiencia</h2>
-
-        <div class="experience-info">
-
-            <div class="grid">
-                <div class="grid-card">
+            <div class="skills-grid">
+                <article class="skill-card">
                     <i class="fa-solid fa-code"></i>
-                    <span>Frontend Development</span>
-                    <h3>2 anos</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero consequatur tenetur excepturi ipsa quas expedita ex exercitationem doloremque illo dolores commodi sint totam et labore reiciendis eos, nam sit itaque.</p>
+                    <h3>Desenvolvimento Web</h3>
+                    <div class="tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span>
+                    </div>
+                </article>
 
-                </div>
+                <article class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Banco de Dados</h3>
+                    <div class="tags">
+                        <span>MySQL</span><span>SQL</span><span>Firebase</span>
+                    </div>
+                </article>
 
-                <div class="grid-card">
-                    <i class="fa-solid fa-file-code"></i>
-                    <span>Graphic Desing</span>
-                    <h3>2 anos</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero consequatur tenetur excepturi ipsa quas expedita ex exercitationem doloremque illo dolores commodi sint totam et labore reiciendis eos, nam sit itaque.</p>
+                <article class="skill-card">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Versionamento</h3>
+                    <div class="tags">
+                        <span>Git</span><span>GitHub</span><span>GitHub Pages</span>
+                    </div>
+                </article>
 
-                </div>
+                <article class="skill-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Outros conhecimentos</h3>
+                    <div class="tags">
+                        <span>Java — básico</span><span>Python — básico</span><span>Windows</span><span>Redes — básico</span>
+                    </div>
+                </article>
 
-                <div class="grid-card">
-                    <i class="fa-solid fa-laptop"></i>
-                    <span>System Desing</span>
-                    <h3>3 anos</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero consequatur tenetur excepturi ipsa quas expedita ex exercitationem doloremque illo dolores commodi sint totam et labore reiciendis eos, nam sit itaque.</p>
+                <article class="skill-card">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3>Design e Prototipação</h3>
+                    <div class="tags">
+                        <span>Figma</span><span>Canva</span>
+                    </div>
+                </article>
 
-                </div>
+                <article class="skill-card">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h3>Informática</h3>
+                    <div class="tags">
+                        <span>Excel</span><span>Word</span><span>PowerPoint</span><span>Montagem e manutenção</span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-                <div class="grid-card">
-                    <i class="fa-solid fa-list"></i>
-                    <span>Content Maneger</span>
-                    <h3>1 anos</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero consequatur tenetur excepturi ipsa quas expedita ex exercitationem doloremque illo dolores commodi sint totam et labore reiciendis eos, nam sit itaque.</p>
-
-                </div>
+        <section id="experience" class="experience">
+            <div class="section-heading">
+                <p class="eyebrow">Vivência profissional</p>
+                <h2 class="section-title">Experiência</h2>
             </div>
 
-            <img src="4f6320dc-8a06-4cdd-acfe-5014759a0e7b.png" alt="">
-        </div>
-    </section>
-    
-    
-    <section id="projects" class="projects">
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-icon"><i class="fa-solid fa-globe"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-top">
+                            <div>
+                                <h3>Freelancer — Manutenção e Atualização de Site</h3>
+                                <p class="company">Corrente Runner</p>
+                            </div>
+                            <span class="status-badge">Freelancer</span>
+                        </div>
+                        <ul>
+                            <li>Atualização e manutenção do site da empresa.</li>
+                            <li>Publicação e atualização de informações sobre corridas e eventos.</li>
+                            <li>Identificação e correção de erros, além de alterações em páginas e conteúdos.</li>
+                            <li>Suporte relacionado ao funcionamento e à manutenção da plataforma.</li>
+                        </ul>
+                    </div>
+                </article>
 
-        <h2 class="section-title">Recent Projects</h2>
+                <article class="timeline-item">
+                    <div class="timeline-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    <div class="timeline-content">
+                        <div class="timeline-top">
+                            <div>
+                                <h3>Recepcionista</h3>
+                                <p class="company">Academia Inova Fit</p>
+                            </div>
+                            <span class="status-badge">Atual • ~1 ano e 6 meses</span>
+                        </div>
+                        <ul>
+                            <li>Atendimento e suporte aos clientes, organização de rotinas administrativas e controle de acessos.</li>
+                            <li>Utilização de ferramentas de informática nas atividades da academia.</li>
+                            <li>Desenvolvimento de soluções digitais voltadas à melhoria de processos internos.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-        <div class="projects-grid">
+        <section id="projects" class="projects section-light">
+            <div class="section-heading">
+                <p class="eyebrow">Prática e desenvolvimento</p>
+                <h2 class="section-title">Projetos</h2>
+                <p class="section-subtitle">Alguns projetos que representam minha evolução em desenvolvimento web e sistemas.</p>
+            </div>
 
-            <div class="project-card">
-                <img src="Captura de tela 2026-08-12 114206.png" alt="">
-                <h3>project x</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti voluptatum at, esse voluptatem facilis est, neque voluptatibus nihil aliquam exercitationem numquam soluta debitis magnam adipisci eum hic aut dolore. Quidem.</p>
-                <div class="btn-group">
-                   <a href="https://seu-projeto.com" target="_blank" class="btn">Live Demo<a>
-                    <a href="https://github.com/SEU-USUARIO/NOME-DO-PROJETO"target="_blank"class="btn">GitHub Repo</a>
+            <div class="projects-grid">
+                <article class="project-card featured-project">
+                    <div class="project-icon"><i class="fa-solid fa-cash-register"></i></div>
+                    <div class="project-topline"><span>Projeto em desenvolvimento</span></div>
+                    <h3>Sistema Web de Caixa — Inova Fit</h3>
+                    <p>Sistema web para controle financeiro e operacional da academia, com registro de mensalidades, vendas, produtos, formas de pagamento e resumos de caixa.</p>
+                    <div class="tags project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span></div>
+                    <div class="btn-group project-actions">
+                        <a href="https://github.com/HeitorMid/Caixa" target="_blank" rel="noopener noreferrer" class="btn"><i class="fa-brands fa-github"></i> Repositório</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    <h3>Sistema de Gerenciamento de Treinos</h3>
+                    <p>Projeto acadêmico com autenticação de usuários, armazenamento de informações e organização de exercícios e treinos por dia.</p>
+                    <div class="tags project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
+                    <div class="btn-group project-actions">
+                        <a href="https://github.com/HeitorMid/treino" target="_blank" rel="noopener noreferrer" class="btn"><i class="fa-brands fa-github"></i> Repositório</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Site criado para apresentar meu perfil profissional, conhecimentos técnicos, experiências, projetos e formas de contato.</p>
+                    <div class="tags project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+                    <div class="btn-group project-actions">
+                        <a href="https://heitormid.github.io/portfolio-website/" target="_blank" rel="noopener noreferrer" class="btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar</a>
+                        <a href="https://github.com/HeitorMid/portfolio-website" target="_blank" rel="noopener noreferrer" class="btn"><i class="fa-brands fa-github"></i> Repositório</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-circle-question"></i></div>
+                    <h3>Quiz Dragon Ball</h3>
+                    <p>Aplicação web interativa desenvolvida para praticar lógica de programação, JavaScript e interação do usuário com a página.</p>
+                    <div class="tags project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="btn-group project-actions">
+                        <a href="https://github.com/HeitorMid/quiz-1" target="_blank" rel="noopener noreferrer" class="btn"><i class="fa-brands fa-github"></i> Repositório</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <div class="section-heading">
+                <p class="eyebrow">Aprendizado contínuo</p>
+                <h2 class="section-title">Formação</h2>
+            </div>
+
+            <div class="education-grid">
+                <article class="education-card primary-card">
+                    <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div>
+                        <span class="education-label">Graduação</span>
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <p>Estácio • 4º semestre</p>
+                        <strong>Previsão de conclusão: junho de 2027</strong>
+                    </div>
+                </article>
+
+                <article class="education-card">
+                    <div class="education-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <div>
+                        <span class="education-label">Curso Técnico</span>
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <p>EETEPA Nazaré Guimarães Macedo — Curuçá, PA</p>
+                        <strong>Concluído</strong>
+                    </div>
+                </article>
+
+                <article class="education-card">
+                    <div class="education-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <div>
+                        <span class="education-label">Aperfeiçoamento</span>
+                        <h3>Alura</h3>
+                        <p>Estudos em Front-end, Back-end, Inteligência Artificial, UX e Design e Data Science.</p>
+                        <strong>Formação continuada</strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-light">
+            <div class="contact-card">
+                <div>
+                    <p class="eyebrow">Vamos conversar?</p>
+                    <h2 class="section-title contact-title">Contato</h2>
+                    <p>Estou aberto a oportunidades de estágio e experiências que contribuam para meu desenvolvimento na área de Tecnologia da Informação.</p>
+                </div>
+
+                <div class="contact-links">
+                    <a href="mailto:pedroheitor.mid@gmail.com" class="contact-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span><small>E-mail</small>pedroheitor.mid@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedro-heitor-da-fonseca-matos-805741386/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span><small>LinkedIn</small>Pedro Heitor da Fonseca Matos</span>
+                    </a>
+                    <a href="https://github.com/HeitorMid" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fa-brands fa-github"></i>
+                        <span><small>GitHub</small>@HeitorMid</span>
+                    </a>
+                    <a href="https://wa.me/5591991752652?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20entrar%20em%20contato." target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span><small>WhatsApp</small>(91) 99175-2652</span>
+                    </a>
                 </div>
             </div>
-
-            <div class="project-card">
-                <img src="Captura de tela 2026-08-12 114206.png" alt="">
-                <h3>project x</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti voluptatum at, esse voluptatem facilis est, neque voluptatibus nihil aliquam exercitationem numquam soluta debitis magnam adipisci eum hic aut dolore. Quidem.</p>
-                <div class="btn-group">
-                    <a href="https://seu-projeto.com" target="_blank" class="btn">Live Demo<a>
-                    <a href="https://github.com/SEU-USUARIO/NOME-DO-PROJETO"target="_blank"class="btn">GitHub Repo</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="Captura de tela 2026-08-12 114206.png" alt="">
-                <h3>project x</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti voluptatum at, esse voluptatem facilis est, neque voluptatibus nihil aliquam exercitationem numquam soluta debitis magnam adipisci eum hic aut dolore. Quidem.</p>
-                <div class="btn-group">
-                    <a href="https://seu-projeto.com" target="_blank" class="btn">Live Demo<a>
-                    <a href="https://github.com/SEU-USUARIO/NOME-DO-PROJETO"target="_blank"class="btn">GitHub Repo</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="input-box">
-
-            <h2 class="section-title">Contact Me</h2>
-
-            <div class="input">
-                <input type="text" placeholder="pedroheitor.mid@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-
-            <div class="btn">Submit</div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <ul>
-            <li>
-                <a href="#about">Sobre</a>
-        </li>
-
-        <li>
-            <a href="#experience">Experiência</a>
-        </li>
-
-        <li>
-            <a href="#projects">Projetos</a>
-        </li>
-
-        <li>
-            <a href="#contact">Contatos</a>
-        </li>
-    </ul>
-
-        <p class="copyright">All Right Reserved | Pedro Heitor</p>
+        <a href="#about" class="footer-logo">Pedro <span>Heitor</span></a>
+        <p>Estudante de ADS • Desenvolvimento Web • Front-end • Suporte de TI</p>
+        <p class="copyright">© <span id="year"></span> Pedro Heitor. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
