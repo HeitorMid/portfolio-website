@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Heitor | Desenvolvedor Web Full Stack</title>
+    <meta name="description" content="Pedro Heitor, desenvolvedor web full stack em formação (ADS – Estácio). Sistemas web sob medida com React, Next.js, TypeScript e PostgreSQL. Aberto a estágio ou vaga júnior remota.">
+    <meta name="theme-color" content="#06140d">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pedro Heitor | Desenvolvedor Web Full Stack">
+    <meta property="og:description" content="Sistemas web sob medida para negócios reais. React · Next.js · TypeScript · PostgreSQL. Aberto a estágio ou vaga júnior remota.">
+    <meta property="og:image" content="https://heitormid.github.io/portfolio-website/assets/og-image.jpg">
+    <meta property="og:url" content="https://heitormid.github.io/portfolio-website/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#top" class="logo" aria-label="Ir para o início">pedro<span>heitor</span><b>.dev</b></a>
+
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://github.com/HeitorMid" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pedroheitor-dev/" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <button class="menu-button" id="menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero" id="top">
+            <div class="container hero-inner">
+                <div class="hero-text reveal">
+                    <span class="availability"><i class="dot"></i> Disponível para estágio ou vaga júnior remota</span>
+                    <p class="eyebrow">Desenvolvedor Web Full Stack em formação</p>
+                    <h1>Olá, eu sou <span>Pedro Heitor</span>.</h1>
+                    <p class="lead">
+                        Desenvolvo sistemas web sob medida para negócios reais. Um deles substituiu o caderno de caixa de uma academia e é usado todos os dias desde junho de 2026. O outro é um sistema de gestão para barbearia, contratado pelo cliente e feito com Next.js, TypeScript e PostgreSQL.
+                    </p>
+
+                    <ul class="hero-stack" aria-label="Principais tecnologias">
+                        <li>React</li><li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li>
+                    </ul>
+
+                    <div class="btn-group">
+                        <a href="#projetos" class="btn btn-primary"><i class="fa-solid fa-arrow-down"></i> Ver projetos</a>
+                        <a href="Curriculo_Pedro_Heitor_TI.pdf" download class="btn"><i class="fa-solid fa-file-arrow-down"></i> Baixar currículo</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="photo-frame">
+                        <img data-parallax="-24" src="assets/pedro-heitor.webp" alt="Foto de Pedro Heitor" width="700" height="631">
+                    </div>
+                    <div class="code-card" aria-hidden="true" data-parallax="70" data-noscale>
+                        <div class="code-dots"><i></i><i></i><i></i></div>
+<pre><code><span class="c">// sobre mim</span>
+<span class="k">const</span> pedro = {
+  curso: <span class="s">'ADS – Estácio'</span>,
+  foco: [<span class="s">'Front-end'</span>, <span class="s">'Back-end'</span>],
+  modelo: <span class="s">'remoto'</span>,
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <ul class="highlights reveal">
+                    <li><strong>2</strong><span>sistemas feitos para clientes reais</span></li>
+                    <li><strong>desde jun. 2026</strong><span>caixa da Inova Fit em uso diário</span></li>
+                    <li><strong>remoto</strong><span>dev web freelancer na Corrente Runner</span></li>
+                    <li><strong>jun. 2027</strong><span>conclusão de ADS na Estácio</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="section" id="projetos">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Projetos</p>
+                    <h2>Sistemas que resolvem problemas de verdade</h2>
+                    <p>Os dois primeiros foram feitos para clientes reais. Os outros mostram como comecei.</p>
+                </div>
+
+                <article class="project-feature reveal">
+                    <a class="project-shot" href="assets/midas-barber-dashboard.webp" target="_blank" rel="noopener">
+                        <img data-parallax="-16" src="assets/midas-barber-dashboard.webp" alt="Painel do Midas Barber com faturamento do dia, atendimentos e assinantes" width="1280" height="860" loading="lazy">
+                    </a>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="badge badge-live">Em desenvolvimento · cliente real</span>
+                            <span class="period">out. 2026 – atual</span>
+                        </div>
+                        <h3>Midas Barber — Sistema de Gestão para Barbearia</h3>
+                        <p>Sistema web sob medida para a barbearia controlar caixa, atendimentos, clientes e assinaturas mensais. Funciona como app no celular (PWA) e no computador.</p>
+                        <ul class="project-points">
+                            <li>Assinaturas com ciclos, renovação sem perda de dias, planos Solo, Dupla e Família e cotas por serviço.</li>
+                            <li>Check-in de assinante com bloqueio por vencimento e lembretes de vencimento via WhatsApp.</li>
+                            <li>Caixa com abertura, entradas, saídas e fechamento conferido; dashboard de faturamento por forma de pagamento.</li>
+                            <li>Segurança: senhas em Argon2id, sessão em cookie seguro, Row Level Security e validação no servidor.</li>
+                            <li>Regras de negócio cobertas por testes automatizados.</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Next.js</li><li>React</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>Tailwind CSS</li>
+                        </ul>
+                        <p class="project-note"><i class="fa-solid fa-lock"></i> Projeto pago, desenvolvido para cliente.</p>
+                    </div>
+                </article>
+
+                <article class="project-feature reverse reveal">
+                    <a class="project-shot light" href="assets/inova-fit-caixa.webp" target="_blank" rel="noopener">
+                        <img data-parallax="-16" src="assets/inova-fit-caixa.webp" alt="Tela de caixa do sistema da Academia Inova Fit" width="1600" height="758" loading="lazy">
+                    </a>
+                    <div class="project-body">
+                        <div class="project-meta">
+                            <span class="badge badge-live">Em uso desde jun. 2026</span>
+                        </div>
+                        <h3>Sistema Web de Caixa — Academia Inova Fit</h3>
+                        <p>Criado quando eu trabalhava na recepção da academia, para substituir o controle de caixa feito à mão no caderno. A recepção e a gerência usam todos os dias.</p>
+                        <ul class="project-points">
+                            <li>Registro de mensalidades, diárias e vendas do freezer por funcionário e por turno.</li>
+                            <li>Controle por forma de pagamento (Pix, dinheiro, débito e crédito), com taxa do cartão automática e fechamento por turno e por dia.</li>
+                            <li>Firebase (Firestore e Authentication) para sincronizar os dados em tempo real entre dispositivos, com histórico para consultar e reabrir expedientes.</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>JavaScript</li><li>HTML</li><li>CSS</li><li>Firebase</li><li>Git</li>
+                        </ul>
+                        <div class="btn-group">
+                            <a href="https://github.com/HeitorMid/Caixa" target="_blank" rel="noopener noreferrer" class="btn btn-small"><i class="fa-brands fa-github"></i> Ver código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <h3 class="subheading reveal">Outros projetos</h3>
+                <div class="cards-grid">
+                    <article class="card reveal">
+                        <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                        <h4>Gerenciamento de Treinos</h4>
+                        <p>Projeto acadêmico com login de usuários, banco de dados e organização de exercícios e treinos por dia.</p>
+                        <ul class="tags tags-small"><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+                        <a href="https://github.com/HeitorMid/treino" target="_blank" rel="noopener noreferrer" class="card-link">Repositório <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon"><i class="fa-solid fa-circle-question"></i></div>
+                        <h4>Quiz Dragon Ball</h4>
+                        <p>Quiz interativo para praticar lógica de programação, validação de respostas e pontuação na tela.</p>
+                        <ul class="tags tags-small"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+                        <a href="https://github.com/HeitorMid/quiz-1" target="_blank" rel="noopener noreferrer" class="card-link">Repositório <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+                        <h4>Este portfólio</h4>
+                        <p>Site responsivo, sem frameworks, publicado no GitHub Pages.</p>
+                        <ul class="tags tags-small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                        <a href="https://github.com/HeitorMid/portfolio-website" target="_blank" rel="noopener noreferrer" class="card-link">Repositório <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- STACK -->
+        <section class="section section-alt" id="stack">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Stack</p>
+                    <h2>Com o que eu trabalho</h2>
+                </div>
+
+                <div class="stack-grid">
+                    <article class="stack-card reveal">
+                        <h3><i class="fa-solid fa-display"></i> Front-end</h3>
+                        <ul class="tags"><li>React</li><li>Next.js</li><li>TypeScript</li><li>JavaScript</li><li>Tailwind CSS</li><li>HTML5</li><li>CSS3</li><li>PWA</li></ul>
+                    </article>
+                    <article class="stack-card reveal">
+                        <h3><i class="fa-solid fa-server"></i> Back-end e dados</h3>
+                        <ul class="tags"><li>PostgreSQL</li><li>Prisma</li><li>Supabase</li><li>Firebase</li><li>SQL</li><li>MySQL</li><li>PHP</li></ul>
+                    </article>
+                    <article class="stack-card reveal">
+                        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Ferramentas e práticas</h3>
+                        <ul class="tags"><li>Git</li><li>GitHub</li><li>Testes automatizados</li><li>Figma</li><li>Python (básico)</li><li>Java (básico)</li></ul>
+                    </article>
+                    <article class="stack-card reveal">
+                        <h3><i class="fa-solid fa-robot"></i> IA no dia a dia</h3>
+                        <p>Uso Claude e ChatGPT no planejamento, na revisão de código e nos testes. O código final é sempre revisado e testado por mim.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIÊNCIA -->
+        <section class="section" id="experiencia">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Experiência</p>
+                    <h2>Onde já trabalhei</h2>
+                </div>
+
+                <ol class="timeline">
+                    <li class="timeline-item reveal">
+                        <div class="timeline-head">
+                            <h3>Desenvolvedor web <small>· Freelancer</small></h3>
+                            <span class="period">fev. 2026 – atual · Remoto</span>
+                        </div>
+                        <p class="company">Corrente Runner</p>
+                        <ul>
+                            <li>Manutenção e atualização do site da empresa com HTML, CSS e JavaScript.</li>
+                            <li>Publicação de informações sobre corridas e eventos para atletas e organizadores.</li>
+                            <li>Correção de erros e ajustes em páginas e conteúdos.</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-head">
+                            <h3>Auxiliar administrativo</h3>
+                            <span class="period">out. 2026 – atual · Curuçá, PA</span>
+                        </div>
+                        <p class="company">Supermercado Santa Fé</p>
+                        <ul>
+                            <li>Mapeamento de rotinas e fluxos do setor para encontrar tarefas manuais que podem ser automatizadas.</li>
+                            <li>Organização de dados e documentos em planilhas.</li>
+                            <li>Planejamento de sistemas internos sob medida com Python e SQL.</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-head">
+                            <h3>Recepcionista</h3>
+                            <span class="period">Experiência anterior</span>
+                        </div>
+                        <p class="company">Academia Inova Fit</p>
+                        <ul>
+                            <li>Atendimento aos clientes, rotinas administrativas e controle de acesso.</li>
+                            <li>Identifiquei que o caixa era controlado à mão e criei o sistema web que a academia usa até hoje.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- FORMAÇÃO -->
+        <section class="section section-alt" id="formacao">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Formação</p>
+                    <h2>Estudos</h2>
+                </div>
+
+                <div class="cards-grid">
+                    <article class="card reveal">
+                        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <span class="card-label">Tecnólogo · fev. 2025 – jun. 2027</span>
+                        <h4>Análise e Desenvolvimento de Sistemas</h4>
+                        <p>Estácio</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon"><i class="fa-solid fa-school"></i></div>
+                        <span class="card-label">Ensino Médio Técnico · 2022 – 2024</span>
+                        <h4>Análise e Desenvolvimento de Sistemas</h4>
+                        <p>EETEPA Nazaré Guimarães Macedo — Curuçá, PA</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <span class="card-label">Formação continuada</span>
+                        <h4>Alura</h4>
+                        <p>Front-end, Back-end, Inteligência Artificial, UX e Design e Data Science.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="section" id="contato">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <div class="contact-text">
+                        <p class="eyebrow">Contato</p>
+                        <h2>Vamos conversar?</h2>
+                        <p>Procuro estágio ou vaga júnior remota em Front-end, Back-end ou Full Stack. Respondo rápido por e-mail, LinkedIn ou WhatsApp.</p>
+                        <div class="btn-group">
+                            <a href="mailto:pedroheitor.mid@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Enviar e-mail</a>
+                            <a href="Curriculo_Pedro_Heitor_TI.pdf" download class="btn"><i class="fa-solid fa-file-arrow-down"></i> Currículo</a>
+                        </div>
+                    </div>
+
+                    <ul class="contact-links">
+                        <li><a href="mailto:pedroheitor.mid@gmail.com"><i class="fa-solid fa-envelope"></i><span><small>E-mail</small>pedroheitor.mid@gmail.com</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/pedroheitor-dev/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span><small>LinkedIn</small>/in/pedroheitor-dev</span></a></li>
+                        <li><a href="https://github.com/HeitorMid" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span><small>GitHub</small>@HeitorMid</span></a></li>
+                        <li><a href="https://wa.me/5591991752652?text=Ol%C3%A1%2C%20Pedro!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i><span><small>WhatsApp</small>(91) 99175-2652</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#top" class="logo">pedro<span>heitor</span><b>.dev</b></a>
+            <p>Desenvolvedor Web Full Stack em formação · Curuçá, PA · Remoto</p>
+            <p class="copyright">© <span id="year">2026</span> Pedro Heitor</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
